@@ -33,6 +33,7 @@ nav2{
   position:fixed;
   top:0%;
   width: 100%;
+  background-color:black;
   font-size:0;
   text-align:center;
 }
@@ -40,7 +41,6 @@ nav2 a{
   display: inline-block;
   font-size:1vw;
   width:10%;
-  background-color:black;
   color:white;
   text-decoration:none;
   padding:1%;
@@ -48,7 +48,7 @@ nav2 a{
   transition: 1s;
 }
 nav2 a:hover{
-  background-color: rgba(0, 0, 0, 0.671);
+  color: rgb(161, 161, 161);
 }
 /*********Überschriften*********/
 h1{
@@ -151,4 +151,68 @@ h2{
 }
 #column img{
   width: 100%;
+}
+
+/*****************Responsive design max-width: 767px (Smartphone)**********************/
+@media screen and (max-width:767px){
+  nav a{
+    font-size:4vw;
+    width:90%;
+  }
+  nav2{
+    position:fixed;
+    font-size:0;
+    text-align:center;
+  }
+  nav2 a{
+    font-size:3vw;
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    float: left;
+    display: block;
+    width: 100%;
+    transition: 1s;
+  }
+  h1{
+    font-size: 20vw;
+    margin: 2%;
+  }
+  h2{
+    font-size: 10vw;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  #bodyIndex p{
+    font-size: 4vw;
+    width: 80%;
+  }
+  #middle{
+    border: 1px solid white;
+    width: 90%;
+  }
+  #second{
+    border: 1px solid black;
+    width: 0%;
+  }
+  #out{
+    border: 1px solid black;
+    width: 0%;
+  }
+  #box{
+    display:block;
+    width: 90%;
+    margin: 2% auto;
+    padding: 2%;
+  }
+  #text{
+    width: 100%;
+  }
+  #text p{
+    font-size: 4vw;
+  }
+  #gallery{
+    display: flex;
+    width: 100%;
+  }
 }
